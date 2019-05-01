@@ -44,7 +44,8 @@ console.log(filteredData);
 
 d3.select('tbody');
 d3.select('tbody').remove();
-d3.select('tbody');
+var tbody = d3.select('#ufo-table').append('tbody');
+
 
 filteredData.forEach(function(filteredData) {
     console.log(filteredData);
@@ -55,32 +56,4 @@ filteredData.forEach(function(filteredData) {
       cell.text(value);
     });
   });
-
-
-// for (i=0, i< true.length; i++)
-
-
-
 });
-
-//NOTES
-//   // Declare variables 
-//   var input, filter, table, tr, td, i, txtValue;
-//   input = document.getElementById("myInput");
-//   filter = input.value.toUpperCase();
-//   table = document.getElementById("myTable");
-//   tr = table.getElementsByTagName("tr");
-
-//   // Loop through all table rows, and hide those who don't match the search query
-//   for (i = 0; i < tr.length; i++) {
-//     td = tr[i].getElementsByTagName("td")[0];
-//     if (td) {
-//       txtValue = td.textContent || td.innerText;
-//       if (txtValue.toUpperCase().indexOf(filter) > -1) {
-//         tr[i].style.display = "";
-//       } else {
-//         tr[i].style.display = "none";
-//       }
-//     } 
-//   }
-// }
